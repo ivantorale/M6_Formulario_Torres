@@ -1,0 +1,43 @@
+<h1 style="color: white;">Buscar cliente</h1>
+<div class="col-lg-2">
+<input class="form-control" id="filtro" placeholder="Numero de cliente" (keyup)="filterTable()">
+</div>
+<br>
+<table class="table" style="color: white;" id="myTable">
+    <thead>
+      <tr>
+        <th>Fecha</th>
+        <th>Número de cliente</th>
+        <th>DNI</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Email</th>
+        <th>Edad</th>
+        <th>Número de asiento</th>
+        <th>Género</th>
+        <th>Población</th>
+        <th>Dirección</th>
+        <th>Privacidad</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of user">
+        <td>{{ item.fecha }}</td>
+        <td>{{ item.numcliente }}</td>
+        <td>{{ item.dni }}</td>
+        <td>{{ item.nombre }}</td>
+        <td>{{ item.apellido }}</td>
+        <td>{{ item.email }}</td>
+        <td>{{ item.edad }}</td>
+        <td>{{ item.numasiento }}</td>
+        <td>{{ item.genero }}</td>
+        <td>{{ item.poblacion }}</td>
+        <td>{{ item.direccion }}</td>
+        <td>{{ item.privacidad }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <div *ngIf="user.length === 0">
+      <h1 style="text-align: center; color: rgb(255, 255, 255);">¡No hay clientes!</h1>
+      <h4 style="text-align: center; color: rgb(255, 255, 255);"><a href="/formulario">Pulsa aqui para añadir un nuevo cliente</a></h4>
+  </div>

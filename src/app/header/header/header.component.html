@@ -1,0 +1,23 @@
+<header>
+	<div class="wrapper">
+		<div>
+			<a [routerLink] = "['jugadores']"><p>Listado de jugadores</p></a>
+			<a [routerLink] = "['resultados']"><p>Resultados</p></a>
+			<a [routerLink] = "['campo']"><p>Campo</p></a>
+			<a [routerLink] = "['formulario']"><p>Formulario</p></a>
+			<a [routerLink] = "['clientes']"><p>Clientes</p></a>
+		</div>
+		<div [ngStyle]="titulo">
+			<img src="{{imageSrc}}" alt="Campo FCB" width="50%" height="50%">
+			FCB</div>
+
+		<nav>
+			<input type="radio" id="pequeno" name="Tamaño" value="huey"  (click)="tamano()">
+			<label for="huey">Tamaño pequeño</label>
+			<input type="radio" id="standar" name="Tamaño" value="huey" checked (click)="tamano()">
+			<label for="huey">Tamaño estandar</label>
+			<input type="radio" id="grande" name="Tamaño" value="huey" (click)="tamano()">
+			<label for="huey">Tamaño grande</label>
+		</nav>
+	</div>
+</header>

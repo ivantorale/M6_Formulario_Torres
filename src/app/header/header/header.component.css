@@ -1,0 +1,48 @@
+
+header {
+	width:100%; /* Establecemos que el header abarque el 100% del documento */
+	overflow:hidden; /* Eliminamos errores de float */
+    background: -webkit-linear-gradient(left, #c91919, #1a1ac5);
+    font-family: 'Roboto', sans-serif;
+	margin-bottom:20px;
+}
+
+.wrapper {
+ /* Establecemos que el ancho sera del 90% */
+	max-width:1200px; /* Aqui le decimos que el ancho máximo sera de 1000px */
+	margin:auto; /* Centramos los elementos */
+	overflow:hidden; /* Eliminamos errores de float */
+}
+
+
+header nav {
+	float:right;
+}
+
+header nav label {
+	display:inline-block;
+	color:#fff;
+	text-decoration:none;
+	padding:10px 20px;
+	line-height:normal;
+	font-size:20px;
+	font-weight:bold;
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition:all 500ms ease;
+    cursor: pointer;
+}
+
+header div p {
+	display:inline-block;
+	color:#fff;
+	text-decoration:none;
+	padding:10px 20px;
+	line-height:normal;
+	font-size:20px;
+	font-weight:bold;
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition:all 500ms ease;
+    cursor: pointer;
+}
